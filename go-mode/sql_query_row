@@ -1,0 +1,11 @@
+#name: sql queryRow
+# --
+err := db.QueryRow("SELECT username FROM users WHERE id=?", id).Scan(&username)
+switch {
+case err == sql.ErrNoRows:
+        log.Printf("No user with that ID.")
+case err != nil:
+        log.Fatal(err)
+default:
+        fmt.Printf("Username is %s\n", username)
+}
