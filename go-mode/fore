@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: foreach
+# key: fore
+# contributor : @pi
+# --
+	for ${1:key}, ${2:value} := range ${3:values} {
+		$0
+	}

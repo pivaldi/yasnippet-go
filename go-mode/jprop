@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: property with json tag
+# key: jp
+# contributor : @pi
+# --
+$1 ${0:TYPE} \`json:"${1:$(s-lower-camel-case yas-text)}"\`

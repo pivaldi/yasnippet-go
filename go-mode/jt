@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: json-tag
+# key: jt
+# contributor : @pi
+# --
+\`json:"`(s-lower-camel-case (save-excursion (pi-home)(thing-at-point 'sexp t)))`"\`
