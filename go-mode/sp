@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Sprintf
+# key: sp
+# contributor : @pi
+# --
+fmt.Sprintf("$1", $0)
